@@ -18,4 +18,5 @@ Control plane consists of multiple components in it like:
    _kube-scheduler:_
    Component that select a available node to run a pod on. When ever there is new pod created kube-scheduler will looks for available node with available resources, affinity, anti-affinity specifications etc and schedule a pod to run on a correct node.
 
-   
+   _kube-controller-manager:_
+   This containes multiple individual componenets inside it like Node controller, Job controller, EndpointSlice controller, ServiceAccount controller etc. As a whole, kube-controller-manager is responsible for maintaining desired state of the cluster, Lets say if the actual state changed to new desired state then 
